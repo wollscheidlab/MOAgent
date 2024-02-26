@@ -53,7 +53,7 @@ After login MOAgent will start automatically. If not, use the desktop shortcut M
     Open a terminal within the git folder where the .yml file is located and execute the following command:
 
     ```bash
-    $ conda env create -f MOAgent.yml
+    $ conda env create -f moagent.yml
     ```
 
 3. Install the iq R package.
