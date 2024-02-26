@@ -20,7 +20,7 @@ Follow the steps below to install and use MOAgent:
 2. Download and extract [MOAgentVM](https://zenodo.org/records/10033047?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjVmZWY2N2M0LWVkMTEtNGU3Ny04ZTdjLTk3YTY5MTQ2MzZmZCIsImRhdGEiOnt9LCJyYW5kb20iOiI2NmM4MmRjMjkzMGNjZjA4ZTZjNzFkOGQzZjgyMjI3YiJ9.fgxo0wMPdy8wQe6cNSJci3lEgWy9AdPXaT51_j60GlJKCLrwsrqEvIeZxZm_U4tMArWe_ZYxLcuGuFcEqb4m_g)
 
 3. Open MOAgentVM.vbox file with VirtualBox
-   (Default username: MOAgent, password: 123)
+   (Default username: moagent, password: 123)
 
 After login MOAgent will start automatically. If not, use the desktop shortcut MOAgent.
 
