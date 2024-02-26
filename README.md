@@ -236,7 +236,7 @@ Spectronaut supports report exports in csv and tsv format. Change the file endin
 The DIANN main report file in a label free quantification default workflow from Fragpipe is **.tsv** and should be used. 
 
 #### Output examples
-![example output](./Figures/output_MOAgent.png)
+![example output](./Figures/output_moagent.png)
 
 
 #### General notes:
