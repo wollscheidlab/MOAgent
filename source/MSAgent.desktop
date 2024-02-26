@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=MSAgent Shortcut
-Comment=Shortcut for my MOAgent script
+Name=MOAgent Shortcut
+Comment=Shortcut for MOAgent script
 # Adjust this path. 
 Exec=/home/dalco/MOAgent/source/MOAgent.sh
 Terminal=true
