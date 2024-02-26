@@ -121,8 +121,8 @@ python /path/to/MOBiceps/data_convert.py --p /path/to/folder --s original_format
 or within your code if you installed MOBiceps via pip
 
 ```bash
-import MOBiceps as msb
-msb.convertRAWMP(original_format,target_format,number_of_cores)
+import MOBiceps as mob
+mob.convertRAWMP(original_format,target_format,number_of_cores)
 ```
 
 ### Feature ML Table
@@ -162,8 +162,8 @@ python /path/to/MOBiceps/expression_table.py --s /path/to/search/output --c /pat
 or within your code if you installed MOBiceps via pip
 
 ```bash
-import MOBiceps as msb
-msb.build_expression_table(path_to_search_output, path_to_class_annotation, path_to_output) 
+import MOBiceps as mob
+mob.build_expression_table(path_to_search_output, path_to_class_annotation, path_to_output) 
 ```
 
 ### RFE++
@@ -212,8 +212,8 @@ python /path/to/MOBiceps/rfePlusPlusWF.py --i /path/to/search/output --c /path/t
 or within your code if you installed MOBiceps via pip
 
 ```bash
-import MOBiceps as msb
-msb.execute_rfePP(path_to_search_output, path_to_class_annotation, path_to_output, phenotype_class_list) 
+import MOBiceps as mob
+mob.execute_rfePP(path_to_search_output, path_to_class_annotation, path_to_output, phenotype_class_list) 
 ```
 
 # Example files and file requirements
