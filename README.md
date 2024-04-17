@@ -2,12 +2,12 @@
 MOAgent is a graphical user interface which enables searching for biomarker candidates without coding skills in MS data by using Artificial Intelligence. An early version of the used algorithms from [MOBiceps](https://github.com/JensSettelmeier/MOBiceps) within [MOAgent](https://github.com/JensSettelmeier/MOAgent) was applied in [Nature Communications, 2023](https://www.nature.com/articles/s41467-023-42101-z) to identify phenotype-specific proteins of myeloproliferative neoplasms (blood cancer).
 
 Quick links:
-- [MOAgent Installation Instructions](# MOAgent Installation Instructions)
-- [Get started in three steps](## Get started in three steps)
-- [Advanced installation outside of a Virtual Machine (VM) ](## Advanced installation outside of a Virtual Machine (VM))
-- [MOAgent Tutorial](# MOAgent Tutorial)
-- [Example files and file requirements](# Example files and file requirements)
-- [General notes:](# General notes)
+- [MOAgent Installation Instructions](#moagent-installation-instructions)
+- [Get started in three steps](#get-started-in-three-steps)
+- [Advanced installation outside of a Virtual Machine (VM)](#advanced-installation-outside-of-a-virtual-machine-vm)
+- [MOAgent Tutorial](#moagent-tutorial)
+- [Example files and file requirements](#example-files-and-file-requirements)
+- [General notes](#general-notes)
 
 
 # MOAgent Installation Instructions
