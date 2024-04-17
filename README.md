@@ -29,7 +29,7 @@ After login MOAgent will start automatically. If not, use the desktop shortcut M
 ### Prerequisites
 
 - [MOBiceps](https://github.com/JensSettelmeier/MOBiceps)
-- [Anaconda](https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh) (We recommand to use conda or other virtual python environments)
+- [Anaconda](https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh) (We recommend to use conda or other virtual python environments)
 - [docker](https://docs.docker.com/engine/install/ubuntu/) (If you want to convert raw data)
 
 
@@ -139,8 +139,8 @@ To use the "Feature ML Table" feature in the GUI:
 2. In the 'Search output' field, specify the file containing your search output. You can use the 'Browse' button to navigate to the file.
 3. In the 'Class annotations' field, specify the file that contains your class annotations. You can use the 'Browse' button to navigate to the file.
 4. In the 'Output path' field, specify the directory where you want to save your output. You can use the 'Browse' button to navigate to the directory.
-5. In the 'Imputation' dropdown menu, select the imputation method to be used. Currently "mean", "median", "zero", "gaussian" are supported. We recommand to use no imputation or your more sophesticated approaches from dedicated imputation packages.
-6. In the 'Feature level' dropdown menu, select if the feature table should be consturcted for peptide or protein level.
+5. In the 'Imputation' dropdown menu, select the imputation method to be used. Currently "mean", "median", "zero", "gaussian" are supported. We recommend to use no imputation or your more sophisticated approaches from dedicated imputation packages.
+6. In the 'Feature level' dropdown menu, select if the feature table should be constructed for peptide or protein level.
 7. Click the 'Start' button to start the data conversion process.
 
 #### Command Line
@@ -182,10 +182,10 @@ To use the RFE++ feature in the GUI:
 5. In the 'Output directory' field, specify the directory where you want to save your output. You can use the 'Browse' button to navigate to the directory.
 6. In the 'Bootstrap augmentation' check box, specify if bootstrap should be applied to augment the samples. The 'Noisy augmentation' check box specifies, if class-dependent Gaussian noise learned from the data should be applied during augmentation. 
 7. In the 'Feature level' dropdown menu, select if the analyses should be done on peptide or protein level.
-8. In the 'GPU support' check box, specify if GPU should be used. By default, GPU is not used. (Not available in VM. Only available if GPU is installed - for experienced users)
-9. In the 'Force handalbe amount of features' check box it can be specified, if up to less than 30 features should be filtered, even if the optimal phenotyp classification is achieved with far more than 30 features. 
+8. In the 'GPU support' check box, specify if a GPU should be used. By default, a GPU is not used. (Not available in VM. Only available if a GPU is installed - for experienced users)
+9. In the 'Force handalbe amount of features' check box it can be specified, if up to less than 30 features should be filtered, even if the optimal phenotype classification is achieved with far more than 30 features. 
 10. In the considered Classes field write in comma separated which classes should be considered in the analysis. If the field is empty, all available classes will be considered. 
-10. Click the 'Start' button to estimate the most contributing phenotyp-specific features.
+10. Click the 'Start' button to estimate the most contributing phenotype-specific features.
 
 #### Command Line
 
@@ -200,7 +200,7 @@ Alternatively, you can use the RFE++ feature from the command line by executing 
 - `--f`: Feature level. "peptide" and "protein" are supported. (Default: 'peptide')
 - `--g`: Support for GPU if set to True. (Default: False)
 - `--n`: Bootstrapping with noisy resampling. (Default: False)
-- `--h`: Force the reduction to a handleable amount of features. (Default: True)
+- `--h`: Force the reduction to a handable  amount of features. (Default: True)
 - `--p`: specify which classes should be considered. 
 
 To execute the script, navigate to its location in your terminal and use the following command:
@@ -221,11 +221,11 @@ mob.execute_rfePP(path_to_search_output, path_to_class_annotation, path_to_outpu
 The class annotation and sample annotation files need to have a specific structure as shown in the following.
 
 #### Class annotation file
-Make sure the column names are **files** and **class**. The file typ should be **.csv**. The classes should not just be numerical. 
+Make sure the column names are **files** and **class**. The file type should be **.csv**. The classes should not just be numerical. 
 ![Screenshot: class annotation file](./Figures/example_class_annotation_file.png)
 
 #### Sample annotation file
-Make sure the column names are **files** and **PatientID**. The file typ should be **.csv**. 
+Make sure the column names are **files** and **PatientID**. The file type should be **.csv**. 
 
 ![Screenshot: sample annotation file](./Figures/example_file_annotation_file_patient.png)
 
@@ -241,5 +241,5 @@ The DIANN main report file in a label free quantification default workflow from 
 
 #### General notes:
 1. General help about VirtualBox (e.g. how to mount local drives to MOAgent) you can find in the [UserManual](http://download.virtualbox.org/virtualbox/UserManual.pdf)
-2. We recommend to access your data using [FileZilla](https://wiki.filezilla-project.org/Documentation), ssh (scp, sftp) and if necessary the VPN functionality within the VM in combination with the file browser. 
+2. We recommend accessing your data using [FileZilla](https://wiki.filezilla-project.org/Documentation), ssh (scp, sftp) and if necessary the VPN functionality within the VM in combination with the file browser. 
 3. Have fun and please leave a star if you find this repo helpful!
