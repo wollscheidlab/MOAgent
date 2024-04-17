@@ -1,5 +1,15 @@
 ![MOAgent logo](./Figures/MOAgent_Logo.png)
 MOAgent is a graphical user interface which enables searching for biomarker candidates without coding skills in MS data by using Artificial Intelligence. An early version of the used algorithms from [MOBiceps](https://github.com/JensSettelmeier/MOBiceps) within [MOAgent](https://github.com/JensSettelmeier/MOAgent) was applied in [Nature Communications, 2023](https://www.nature.com/articles/s41467-023-42101-z) to identify phenotype-specific proteins of myeloproliferative neoplasms (blood cancer).
+
+Quick links:
+- [MOAgent Installation Instructions](# MOAgent Installation Instructions)
+- [Get started in three steps](## Get started in three steps)
+- [Advanced installation outside of a Virtual Machine (VM) ](## Advanced installation outside of a Virtual Machine (VM))
+- [MOAgent Tutorial](# MOAgent Tutorial)
+- [Example files and file requirements](# Example files and file requirements)
+- [General notes:](# General notes)
+
+
 # MOAgent Installation Instructions
 
 ## Minimal System Requirements
@@ -17,7 +27,7 @@ Follow the steps below to install and use MOAgent:
 
 1. Install [VirtualBox](https://www.virtualbox.org/)
 
-2. Download and extract [MOAgentVM](https://zenodo.org/records/10033047?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjVmZWY2N2M0LWVkMTEtNGU3Ny04ZTdjLTk3YTY5MTQ2MzZmZCIsImRhdGEiOnt9LCJyYW5kb20iOiI2NmM4MmRjMjkzMGNjZjA4ZTZjNzFkOGQzZjgyMjI3YiJ9.fgxo0wMPdy8wQe6cNSJci3lEgWy9AdPXaT51_j60GlJKCLrwsrqEvIeZxZm_U4tMArWe_ZYxLcuGuFcEqb4m_g)
+2. Download and extract [MOAgentVM](https://zenodo.org/records/10715409?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjAwMDY3MGFlLWZkY2YtNGU5OC1hODlkLTRiMTIyMjA4NDJkNSIsImRhdGEiOnt9LCJyYW5kb20iOiI0OGFlZmZkZjEzYWY3N2Q0ODllNDI4OGExNDc2ZTA1OSJ9.sDMnyH-ZpRNI33_hEe7sHvJAe1xD_D_4gfSeK1xEOwV0mjk_-jASbw9RI7a2WiRXJ2tY3-sqEXYRFuzkvdpsSw)
 
 3. Open MOAgentVM.vbox file with VirtualBox
    (Default username: moagent, password: 123)
@@ -28,7 +38,7 @@ After login MOAgent will start automatically. If not, use the desktop shortcut M
 ## Advanced installation outside of a Virtual Machine (VM)  
 ### Prerequisites
 
-- [MOBiceps](https://github.com/JensSettelmeier/MOBiceps)
+- [MOBiceps](https://github.com/wollscheidlab/MOBiceps)
 - [Anaconda](https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh) (We recommend to use conda or other virtual python environments)
 - [docker](https://docs.docker.com/engine/install/ubuntu/) (If you want to convert raw data)
 
@@ -72,7 +82,7 @@ After login MOAgent will start automatically. If not, use the desktop shortcut M
     ```
 
 
-# MOAgent GUI Tutorial
+# MOAgent Tutorial
 For Spectronaut users, you need to use the [iq.rs](https://github.com/tvpham/iq/releases/download/v1.1/iq.rs) report schema in the repo to extract the needed columns for MOAgent.
 For Fragpipe users, we tested functionality with diann and ionquant output of the LF-MBR and DIA_SpecLib_Quant workflow. In general you can use any feature expression matrix where rows represent samples and columns features. This tutorial will guide you through using the MOAgent graphical user interface (GUI). This GUI allows you to convert data formats, generate feature tables, and use RFE++ for feature selection.
 
@@ -239,7 +249,8 @@ The DIANN main report file in a label free quantification default workflow from 
 ![example output](./Figures/output_moagent.png)
 [More case studies](https://polybox.ethz.ch/index.php/s/IoEnfcmmIkqletP)
 
-#### General notes:
+# General notes
 1. General help about VirtualBox (e.g. how to mount local drives to MOAgent) you can find in the [UserManual](http://download.virtualbox.org/virtualbox/UserManual.pdf)
 2. We recommend accessing your data using [FileZilla](https://wiki.filezilla-project.org/Documentation), ssh (scp, sftp) and if necessary the VPN functionality within the VM in combination with the file browser. 
 3. Have fun and please leave a star if you find this repo helpful!
+4. If you have any questions, please do not hesitate to contact [jsettelmeier@ethz.ch](jsettelmeier@ethz.ch).
