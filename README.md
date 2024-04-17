@@ -232,6 +232,7 @@ To test MOAgent outside of the provided MOAgentVM hosted on Zenodo, you can use 
 1. Therefore, make sure to set `--i` parameter of RFE++ function `rfePlusPlusWF.py` or `path_to_search_output` parameter of `execute_rfePP` of the `MOBiceps` package to `MOAgent/Demo/input/metabolite_expression_table.csv` or select this file for the `Search output or expression table` field in the GUI via the `Browse` button.
 2. Additionally, set the `--c` parameter of RFE++ function `rfePlusPlusWF.py` or `path_to_class_annotation` of `execute_rfePP` of the `MOBiceps` package to `MOAgent/Demo/input/class_annoatation.csv` or select this file for the `Class annoations` field in the GUI via the `Browse` button. 
 3. Finally, set the `--o` parameter of RFE++ function `rfePlusPlusWF.py` or `path_to_output` of `execute_rfePP` of the `MOBiceps` package to `MOAgent/Demo/output` or select this path for the `Output directory` field in the GUI via the `Browse` button and hit the `Start` button.
+
 The results of the MOAgent analysis will be available in the folder “<..>/Demo/output/”. They will be similar to the reported results which can be found here [More case studies](https://polybox.ethz.ch/index.php/s/IoEnfcmmIkqletP).  
 
 
