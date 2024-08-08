@@ -116,7 +116,7 @@ You will find two directories in the specified *Input directory* folder. One con
 
 #### Command Line
 
-The script accepts the following parameters:
+Alternatively, you can execute the MOBiceps `convertRAWMP.py` in the terminal. The following parameters are accepted:
 
 - `--p` or `--path_to_folder`: Absolute path to the folder containing all files to be converted. (Default: Current working directory)
 - `--s` or `--orig_format`: Source file format. (Default: 'raw')
@@ -126,7 +126,7 @@ The script accepts the following parameters:
 To execute the script, navigate to its location in your terminal and use the following command:
 
 ```bash
-python /path/to/MOBiceps/data_convert.py --p /path/to/folder --s original_format --f target_format --c number_of_cores
+python /path/to/MOBiceps/convertRAWMP.py --p /path/to/folder --s original_format --f target_format --c number_of_cores
 ```
 
 or within your code if you installed MOBiceps via pip
@@ -156,7 +156,7 @@ To use the "Feature ML Table" feature in the GUI:
 
 #### Command Line
 
-Alternatively, you can use the "Feature ML Table" function from the command line by executing the MOBiceps `data_convert.py`. The following parameters are accepted:
+Alternatively, you can use the "Feature ML Table" function from the command line by executing the MOBiceps `expression_table.py`. The following parameters are accepted:
 
 - `--s`: Path to search output. Currently Spectronaut and DIA-NN output is supported. (Default: Current working directory)
 - `--c`: Path to class annotation file. (Default: Current working directory)
@@ -173,8 +173,8 @@ python /path/to/MOBiceps/expression_table.py --s /path/to/search/output --c /pat
 or within your code if you installed MOBiceps via pip
 
 ```bash
-import MOBiceps as mob
-mob.build_expression_table(path_to_search_output, path_to_class_annotation, path_to_output) 
+from MOBiceps.expression_table import create_rfe_expression_table
+feature_expression_table = create_rfe_expression_table(path_to_search_output, path_to_class_annotation, path_to_output) 
 ```
 
 ### RFE++
@@ -223,8 +223,8 @@ python /path/to/MOBiceps/rfePlusPlusWF.py --i /path/to/search/output --c /path/t
 or within your code if you installed MOBiceps via pip
 
 ```bash
-import MOBiceps as mob
-mob.execute_rfePP(path_to_search_output, path_to_class_annotation, path_to_output, phenotype_class_list) 
+from MOBiceps.rfePlusPlusWF import execute_rfePP
+most_contributing_features = execute_rfePP(path_to_search_output, path_to_class_annotation, path_to_output, phenotype_class_list) 
 ```
 
 ## Demo
